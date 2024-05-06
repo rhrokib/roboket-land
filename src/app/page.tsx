@@ -1,29 +1,25 @@
-import Header from "../components/multi-heading";
+import {
+  Header,
+  HeaderText,
+  HeaderTitle,
+  SubHeader,
+} from '@/components/header';
+
 export default function Home() {
-  const { data, error, others } = whatever(12);
   return (
     <>
       <div className="flex justify-center items-center bg-light min-h-screen">
-        <Header
-          header="Advanced platform for your customer"
-          subheader="A new look!"
-          title="Welcome to our platform"
-          coloredWords={["platform", "customer"]}
-          headerColor="dark"
-          headerWordColor="text-primary-600"
-          // subHeaderColor="secondary"
-          headerFontSize="4xl"
-          titleColor="text-red-700"
-          titleFontSize="base"
-        />
+        <Header alignment="left">
+          <HeaderTitle size="text-sm">Good</HeaderTitle>
+          <HeaderText
+            size="text-2xl"
+            coloredWords={['colored', 'big']}
+            accentColor="text-primary-600">
+            A big header with some Colored words
+          </HeaderText>
+          <SubHeader size="text-base">Subheader</SubHeader>
+        </Header>
       </div>
     </>
   );
-}
-
-export function whatever(model: any) {
-  const data = "something";
-  const error = "something";
-  const others = "something";
-  return { data, error, others };
 }

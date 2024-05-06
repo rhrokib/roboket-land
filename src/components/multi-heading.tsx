@@ -1,17 +1,17 @@
-"use client";
+'use client';
 export interface HeaderProps {
   title?: string;
-  titleFontSize?: "xs" | "sm" | "base";
+  titleFontSize?: 'xs' | 'sm' | 'base';
   header: string;
-  headerFontSize?: "xl" | "2xl" | "4xl";
+  headerFontSize?: 'xl' | '2xl' | '4xl';
   subheader?: string;
   headerColor?: string;
   headerWordColor?: string;
   subHeaderColor?: string;
-  subHeaderFontSize?: "sm" | "base" | "xl";
+  subHeaderFontSize?: 'sm' | 'base' | 'xl';
   titleColor?: string;
   coloredWords?: string[];
-  alignment?: "left" | "center" | "right";
+  alignment?: 'left' | 'center' | 'right';
 }
 
 export default function Header(props: HeaderProps) {
@@ -23,7 +23,7 @@ export default function Header(props: HeaderProps) {
     coloredWords,
     headerWordColor,
     subheader,
-    subHeaderColor = "orange-600",
+    subHeaderColor = 'orange-600',
     alignment,
     headerFontSize,
     subHeaderFontSize,
@@ -32,21 +32,20 @@ export default function Header(props: HeaderProps) {
 
   return (
     <div
-      className={`text-${titleColor} ${alignment === "center" ? "text-center" : alignment === "right" ? "text-right" : "text-left"} flex flex-col gap-4`}
-    >
+      className={`text-${titleColor} ${alignment === 'center' ? 'text-center' : alignment === 'right' ? 'text-right' : 'text-left'} flex flex-col gap-4`}>
       {/* title */}
       {title && <h1 className={`${titleColor} text-sm`}>{title}</h1>}
 
       {/* header */}
       <h2 className={`text-${headerColor} text-2xl font-bold`}>
-        {header.split(" ").map((word, index) => {
+        {header.split(' ').map((word, index) => {
           return coloredWords?.includes(word.trim()) ? (
             <span key={index} className={`${headerWordColor}`}>
-              {word}{" "}
+              {word}{' '}
             </span>
           ) : (
             <span className="text-dark" key={index}>
-              {word}{" "}
+              {word}{' '}
             </span>
           );
         })}

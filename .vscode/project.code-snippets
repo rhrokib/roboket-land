@@ -1,0 +1,23 @@
+{
+  "Header Snippet": {
+    "prefix": "hdr",
+    "body": [
+      "<Header alignment=\"left\">",
+      "  <HeaderTitle size=\"text-sm\">",
+      "    ${1:This is a title}",
+      "  </HeaderTitle>",
+      "  <HeaderText",
+      "    size=\"text-2xl\"",
+      "    coloredWords={['colored']}",
+      "    accentColor=\"text-primary-600\"",
+      "  >",
+      "    ${2:A big header with some Colored words}",
+      "  </HeaderText>",
+      "  <SubHeader size=\"text-base\">",
+      "    ${3:Subheader}",
+      "  </SubHeader>",
+      "</Header>",
+    ],
+    "description": "Header component snippet",
+  },
+}
