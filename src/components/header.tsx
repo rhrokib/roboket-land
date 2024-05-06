@@ -89,5 +89,5 @@ export function SubHeader({
   color = 'text-dark',
   size = 'text-base',
 }: SubHeaderProps) {
-  return <span className={`text-${color} text-${size} `}>{children}</span>;
+  return <span className={`text-${color} text-${size}`}>{children}</span>;
 }
