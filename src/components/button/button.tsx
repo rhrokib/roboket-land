@@ -1,7 +1,5 @@
-// Button.tsx
 import React from 'react';
 
-// interfaces
 interface ButtonSize {
   small: 'px-2 py-1 text-sm';
   medium: 'px-4 py-2 text-base';
@@ -18,7 +16,6 @@ interface ButtonProps
   outline?: boolean;
 }
 
-// implementation
 export function Button({
   label,
   rightIcon,
