@@ -31,3 +31,21 @@ body {
     text-wrap: balance;
   }
 }
+
+/* This will affect the scrollbar globally */
+/* This will affect the scrollbar globally */
+::-webkit-scrollbar {
+  width: 8px; /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #c0d8e7; /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* color of the scroll thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* color of the scroll thumb on hover */
+}

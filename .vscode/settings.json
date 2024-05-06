@@ -1,0 +1,11 @@
+{
+    "cSpell.words": [
+        "roboket",
+        "tailwindcss"
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit",
+        "source.removeUnusedImports": "explicit",
+        "source.organizeImports": "explicit",
+    }
+}
