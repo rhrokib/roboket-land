@@ -8,12 +8,12 @@ export default function Home() {
           header="Advanced platform for your customer"
           subheader="A new look!"
           title="Welcome to our platform"
-          coloredWords={["platform"]}
+          coloredWords={["platform", "customer"]}
           headerColor="dark"
-          headerWordColor="primary-600"
+          headerWordColor="text-primary-600"
           // subHeaderColor="secondary"
           headerFontSize="4xl"
-          titleColor="red-700"
+          titleColor="text-red-700"
           titleFontSize="base"
         />
       </div>

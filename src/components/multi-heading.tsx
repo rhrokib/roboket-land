@@ -35,13 +35,13 @@ export default function Header(props: HeaderProps) {
       className={`text-${titleColor} ${alignment === "center" ? "text-center" : alignment === "right" ? "text-right" : "text-left"} flex flex-col gap-4`}
     >
       {/* title */}
-      {title && <h1 className="text-sm">{title}</h1>}
+      {title && <h1 className={`${titleColor} text-sm`}>{title}</h1>}
 
       {/* header */}
       <h2 className={`text-${headerColor} text-2xl font-bold`}>
         {header.split(" ").map((word, index) => {
           return coloredWords?.includes(word.trim()) ? (
-            <span key={index} className={`text-${headerWordColor}`}>
+            <span key={index} className={`${headerWordColor}`}>
               {word}{" "}
             </span>
           ) : (
@@ -56,8 +56,6 @@ export default function Header(props: HeaderProps) {
       {subheader && (
         <span className={`text-${subHeaderColor}`}>{subheader}</span>
       )}
-
-      <span className="font-bold text-red-900">Hello</span>
     </div>
   );
 }
