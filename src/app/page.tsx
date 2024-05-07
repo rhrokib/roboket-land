@@ -6,6 +6,7 @@ import {
   SubHeader,
 } from '@/components/header';
 
+import { RatingCard } from '@/components/rating/rating';
 import { Tick } from '../components/tick';
 
 export default function Home() {
@@ -131,6 +132,18 @@ export default function Home() {
             color="text-primary-600"
           />
         </div>
+
+        <div>
+        <RatingCard
+          title="Feature A"
+          rating={4.5}
+          name="John Doe"
+          designation="Product Manager"
+          comments="This means analyzing your reviews to draw out as many insights as possible, responding to these reviews, and making any necessary changes to the customer experience."
+        />
+        </div>
+
+  
       </div>
     </>
   );
