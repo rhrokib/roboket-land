@@ -75,7 +75,7 @@ function Buttons() {
         variant="primary"
         outline
         rightIcon={<FaGoogle />}
-        leftIcon={<FaGoogle className="text-red-900" />}
+        leftIcon={<FaGoogle className="text-4xl text-red-900" />}
       />
     </div>
   );
