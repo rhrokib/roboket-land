@@ -39,7 +39,9 @@ export function Header({ alignment = 'left', children }: HeaderProps) {
         : 'text-left';
 
   return (
-    <div className={`${alignmentClass} flex flex-col gap-4`}>{children}</div>
+    <div className={`${alignmentClass} flex flex-col border  p-3 gap-4`}>
+      {children}
+    </div>
   );
 }
 
@@ -74,7 +76,8 @@ export function HeaderText({
         ? children.split(' ').map((word: string, index: number) => (
             <span
               key={index}
-              className={`${coloredWordsSet.has(word.trim().toLowerCase()) ? accentColor : color}`}>
+              className={`${coloredWordsSet.has(word.trim().toLowerCase()) ? accentColor : color}`}
+            >
               {word}{' '}
             </span>
           ))

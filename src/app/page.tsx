@@ -15,13 +15,16 @@ export default function Home() {
           <HeaderText
             size="text-2xl"
             coloredWords={['colored']}
-            accentColor="text-primary-600">
+            accentColor="text-primary-600"
+          >
             A big header with some Colored words
           </HeaderText>
           <SubHeader size="text-base">Subheader</SubHeader>
         </Header>
+
+        {/*  */}
         <div className="flex gap-2 my-5">
-          <Button label="Button 4" size="small" variant="primary" outline />
+          <Button label="Button 4" size="small" variant="light" outline />
           <Button
             label="Button 5"
             size="medium"
@@ -33,7 +36,8 @@ export default function Home() {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-6 h-6">
+                className="w-6 h-6"
+              >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -53,7 +57,8 @@ export default function Home() {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-6 h-6">
+                className="w-6 h-6"
+              >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -66,6 +71,7 @@ export default function Home() {
             label="Button 7"
             size="small"
             variant="primary"
+            outline
             rightIcon={
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +79,8 @@ export default function Home() {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-6 h-6">
+                className="w-6 h-6"
+              >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -88,7 +95,8 @@ export default function Home() {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-6 h-6">
+                className="w-6 h-6"
+              >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -98,13 +106,6 @@ export default function Home() {
             }
           />
         </div>
-        {/* <Button
-          leftIcon="❤️"
-          color="bg-dark text-light"
-          size="small"
-          label="Click me"
-        />
-        <Button size="large" rightIcon="❤️" label="Click me" /> */}
       </div>
     </>
   );
