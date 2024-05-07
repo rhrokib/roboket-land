@@ -2,7 +2,7 @@
 
 import { TextColor, TextSize } from '@/types/ui-config';
 
-interface tickProps {
+interface iconLabelProps {
   leftIcon?: React.ReactNode;
   rightIcon?: React.ReactNode;
   label: string;
@@ -10,16 +10,16 @@ interface tickProps {
   color: TextColor;
 }
 
-export function Tick({
+export function IconLabel({
   leftIcon,
   rightIcon,
   label,
   fontSize,
   color,
   ...props
-}: tickProps) {
+}: iconLabelProps) {
   return (
-    <div className="flex">
+    <div className="flex justify-center items-center">
       {leftIcon && <div className="mr-2">{leftIcon}</div>}
 
       <div>
