@@ -1,7 +1,8 @@
+import { GoCheckCircle } from 'react-icons/go';
+
 import { Button } from '@/components/button/button';
 import { Header, HeaderText, SubHeader } from '@/components/header';
 import { IconLabel } from '@/components/icon-label';
-import { GoCheckCircle } from 'react-icons/go';
 import { TbCircleArrowUpRight } from 'react-icons/tb';
 
 export default function Page1() {
