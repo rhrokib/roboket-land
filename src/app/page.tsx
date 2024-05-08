@@ -1,4 +1,5 @@
 import { GoCheckCircle } from 'react-icons/go';
+import { HiOutlineMailOpen } from 'react-icons/hi';
 
 import { Button } from '@/components/button/button';
 import {
@@ -7,6 +8,7 @@ import {
   HeaderTitle,
   SubHeader,
 } from '@/components/header';
+import { IconCard } from '@/components/icon-card';
 
 import { IconLabel } from '../components/icon-label';
 
@@ -116,6 +118,36 @@ export default function Home() {
             label={'This is new addition'}
             fontSize="text-sm"
             color="text-primary-600"
+          />
+        </div>
+        <div className="flex m-16">
+          <IconCard
+            icon={<HiOutlineMailOpen className="text-primary-600 size-7" />}
+            title="CRM"
+            description="CRM software has made 
+            customer management easier 
+            and less time-consuming."
+          />
+          <IconCard
+            icon={<HiOutlineMailOpen className="text-primary-600 size-7" />}
+            title="CRM"
+            description="CRM software has made 
+            customer management easier 
+            and less time-consuming."
+          />
+          <IconCard
+            icon={<HiOutlineMailOpen className="text-primary-600 size-7" />}
+            title="CRM"
+            description="CRM software has made 
+            customer management easier 
+            and less time-consuming."
+          />
+          <IconCard
+            icon={<HiOutlineMailOpen className="text-primary-600 size-7" />}
+            title="CRM"
+            description="CRM software has made 
+            customer management easier 
+            and less time-consuming."
           />
         </div>
       </div>
