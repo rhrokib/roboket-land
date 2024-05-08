@@ -73,7 +73,10 @@ export function HeaderText({
   const coloredWordsSet = new Set(coloredWords);
 
   return (
-    <h2 className={`${color} ${size} font-bold`} {...props}>
+    <h2
+      className={`${color} ${size} font-bold md:whitespace-nowrap`}
+      {...props}
+    >
       {typeof children === 'string'
         ? children.split(' ').map((word: string, index: number) => (
             <span
@@ -94,5 +97,5 @@ export function SubHeader({
   color = 'text-secondary',
   size = 'text-base',
 }: SubHeaderProps) {
-  return <span className={`${color} ${size}`}>{children}</span>;
+  return <span className={`${color} ${size} font-semibold`}>{children}</span>;
 }
