@@ -4,6 +4,7 @@ export type TextColor =
   | 'text-primary-600'
   | 'text-dark'
   | 'text-light'
+  | 'text-secondary'
   | 'text-accent-600';
 
 export type SmallText = 'text-sm' | 'text-base' | 'text-xs';
