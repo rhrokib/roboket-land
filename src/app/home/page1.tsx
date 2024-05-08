@@ -1,3 +1,5 @@
+import { GoCheckCircle } from 'react-icons/go';
+
 import { Button } from '@/components/button/button';
 import {
   Header,
@@ -6,7 +8,6 @@ import {
   SubHeader,
 } from '@/components/header';
 import { IconLabel } from '@/components/icon-label';
-import { GoCheckCircle } from 'react-icons/go';
 
 export default function Page1() {
   return (
