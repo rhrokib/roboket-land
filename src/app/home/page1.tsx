@@ -3,45 +3,68 @@ import { GoCheckCircle } from 'react-icons/go';
 import { Button } from '@/components/button/button';
 import { Header, HeaderText, SubHeader } from '@/components/header';
 import { IconLabel } from '@/components/icon-label';
+import Image from 'next/image';
+import { MdOutlineCreditCardOff } from 'react-icons/md';
+import { RiCoupon2Line } from 'react-icons/ri';
 import { TbCircleArrowUpRight } from 'react-icons/tb';
 
 export default function Page1() {
   return (
     <>
-      <div className="flex flex-col justify-center items-center bg-light min-h-dvh">
-        <Header alignment="center">
-          <HeaderText
-            size="text-6xl"
-            color="text-accent-400"
-            coloredWords={['business']}
-            accentColor="text-primary-600"
-          >
-            Business Growth Simplified
-          </HeaderText>
-          <SubHeader color="text-accent-200" size="text-base">
-            An integrated tool for Sales, Marketing, Customer  Service &
-            Operation that helps your business grow.
-          </SubHeader>
-        </Header>
+      <div className="relative flex flex-col justify-center items-center gap-5 bg-light min-h-dvh">
+        <div className="pt-32">
+          <Header alignment="center">
+            <HeaderText
+              size="text-6xl"
+              color="text-accent-400"
+              coloredWords={['business']}
+              accentColor="text-primary-600"
+            >
+              Business Growth
+            </HeaderText>
+            <HeaderText
+              size="text-6xl"
+              color="text-accent-400"
+              coloredWords={['business']}
+              accentColor="text-primary-600"
+            >
+              Simplified
+            </HeaderText>
+            <SubHeader color="text-accent-200" size="text-base">
+              An integrated tool for Sales, Marketing, Customer  Service &
+              Operation that helps your business grow.
+            </SubHeader>
+          </Header>
+        </div>
         <Button
           label="Start trial"
           variant="white"
           rightIcon={<TbCircleArrowUpRight className="font-semibold text-xl" />}
         />
 
-        {/*  */}
-        <div className="flex gap-2 my-5">
-          <Button label="Button 4" size="small" variant="light" outline />
-          <Button label="Button 5" size="medium" variant="secondary" />
-          <Button label="Button 6" size="large" variant="accent" />
-          <Button label="Button 7" size="small" variant="primary" outline />
-        </div>
-        <div>
+        <div className="md:flex xs:flex-col xs:justify-start md:gap-5 xs:gap-2">
           <IconLabel
-            leftIcon={<GoCheckCircle className="text-primary-600" />}
-            label={'This is new addition'}
-            fontSize="text-sm"
-            color="text-primary-600"
+            leftIcon={<GoCheckCircle className="text-primary-600 text-xl" />}
+            label="3-Day Free Trial"
+          />
+          <IconLabel
+            leftIcon={
+              <MdOutlineCreditCardOff className="text-primary-600 text-xl" />
+            }
+            label="No Credit Card"
+          />
+          <IconLabel
+            leftIcon={<RiCoupon2Line className="text-primary-600 text-xl" />}
+            label="Cancel Anytime"
+          />
+        </div>
+        <div className="top-3/4 z-10 mt-10 transform">
+          <Image
+            className="w-full"
+            src={'/asset/roboket-dashboard.svg'}
+            width={900}
+            height={300}
+            alt="Hero Image"
           />
         </div>
       </div>

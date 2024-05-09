@@ -3,7 +3,7 @@ import { Button } from './button/button';
 
 export default function NavigationBar() {
   return (
-    <nav className="fixed bg-white w-screen">
+    <nav className="z-50 fixed bg-white w-screen">
       <div className="flex flex-wrap justify-between items-center mx-auto p-4 max-w-screen-xl">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
           <Image src="/logo.svg" width={120} height={60} alt="Roboket Logo" />
@@ -17,7 +17,7 @@ export default function NavigationBar() {
           </button>
         </div> */}
         <div
-          className="md:flex justify-between items-center gap-3 md:order-1 hidden w-full md:w-auto"
+          className="md:flex justify-between items-center gap-5 md:order-1 hidden w-full md:w-auto"
           id="navbar-cta"
         >
           <ul className="flex md:flex-row flex-col md:space-x-8 rtl:space-x-reverse mt-4 md:mt-0 p-4 md:p-0 rounded-lg font-medium">
