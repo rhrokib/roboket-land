@@ -3,6 +3,7 @@ import { GoCheckCircle } from 'react-icons/go';
 import { Button } from '@/components/button/button';
 import { Header, HeaderText, SubHeader } from '@/components/header';
 import { IconLabel } from '@/components/icon-label';
+import { RatingCard } from '@/components/rating/rating';
 import { TbCircleArrowUpRight } from 'react-icons/tb';
 
 export default function Page1() {
@@ -43,6 +44,15 @@ export default function Page1() {
             fontSize="text-sm"
             color="text-primary-600"
           />
+        </div>
+        <div className="flex flex-col justify-center items-center bg-light">
+          <RatingCard
+            name={'Mamdooh Elamin'}
+            designation={'CEO, Goodwill LTD.'}
+            comments="This means analyzing your reviews to draw out as many <br/>insights as possible, responding to these reviews, and making any necessary changes to the customer experience."
+            rating={5}
+            ratingUsrerImageName="/images/rating_user.jpg"
+          ></RatingCard>
         </div>
       </div>
     </>
