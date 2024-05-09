@@ -51,7 +51,7 @@ export function RatingCard({
           <div className="rounded-full overflow-hidden flex justify-center items-center mt-8">
             <img
               className="w-[68px] h-[68px] rounded-full"
-              src={ratingUsrerImageName}
+              src="/images/rating_user.jpg"
               alt="asda"
             />
           </div>
