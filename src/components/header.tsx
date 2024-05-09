@@ -39,7 +39,7 @@ export function Header({ alignment = 'left', children }: HeaderProps) {
         : 'text-left';
 
   return (
-    <div className={`${alignmentClass} flex flex-col border  p-3 gap-4`}>
+    <div className={`${alignmentClass} flex flex-col  p-3 gap-4`}>
       {children}
     </div>
   );
@@ -53,9 +53,11 @@ export function HeaderTitle({
   ...props
 }: HeaderTitleProps) {
   return (
-    <h1 className={`${color} ${size} font-semibold`} {...props}>
-      {children}
-    </h1>
+    <>
+      <h1 className={`${color} ${size} font-semibold`} {...props}>
+        {children}
+      </h1>
+    </>
   );
 }
 
@@ -71,7 +73,10 @@ export function HeaderText({
   const coloredWordsSet = new Set(coloredWords);
 
   return (
-    <h2 className={`${color} ${size} font-bold `} {...props}>
+    <h2
+      className={`${color} ${size} font-bold md:whitespace-nowrap`}
+      {...props}
+    >
       {typeof children === 'string'
         ? children.split(' ').map((word: string, index: number) => (
             <span
@@ -89,8 +94,8 @@ export function HeaderText({
 // SubHeader
 export function SubHeader({
   children,
-  color = 'text-dark',
+  color = 'text-secondary',
   size = 'text-base',
 }: SubHeaderProps) {
-  return <span className={`text-${color} text-${size}`}>{children}</span>;
+  return <span className={`${color} ${size} font-semibold`}>{children}</span>;
 }
