@@ -11,7 +11,7 @@ interface ButtonVariant {
   secondary: 'bg-secondary text-light';
   accent: 'bg-accent-600 text-light';
   dark: 'bg-dark text-light';
-  light: 'bg-light text-dark';
+  light: 'bg-light text-primary-600 shadow';
 }
 
 interface ButtonProps
@@ -44,13 +44,13 @@ export function Button({
     secondary: 'bg-secondary text-light',
     accent: 'bg-accent-600 text-light',
     dark: 'bg-dark text-light',
-    light: 'bg-light text-dark',
+    light: 'bg-light text-primary-600 shadow',
   };
 
   return (
     <button
       {...props}
-      className={`${variantClasses[variant]} ${sizeClasses[size]} ${outline ? 'outline outline-1' : 'outline-none'} flex justify-center items-center rounded gap-2 hover:opacity-90  active:opacity-100 active:shadow-inner`}
+      className={`${variantClasses[variant]} ${sizeClasses[size]} ${outline ? 'outline outline-1' : 'outline-none'} flex justify-center items-center rounded gap-2 hover:opacity-90   active:opacity-100 active:shadow-inner`}
     >
       {leftIcon && <span className="mr-2">{leftIcon}</span>}
       {label}
