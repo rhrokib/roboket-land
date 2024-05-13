@@ -52,7 +52,7 @@ export function Button({
   return (
     <button
       {...props}
-      className={`${variantClasses[variant]} ${sizeClasses[size]} ${outline ? 'outline outline-1' : 'outline-none'} flex  font-semibold justify-center items-center rounded gap-2 whitespace-nowrap  hover:opacity-90  active:opacity-100 active:shadow-inner`}
+      className={`${variantClasses[variant]} ${sizeClasses[size]} ${outline ? 'outline outline-1' : 'outline-none'} flex  font-medium justify-center items-center rounded gap-2 whitespace-nowrap  hover:opacity-90  active:opacity-100 active:shadow-inner`}
     >
       {leftIcon && <span className="mr-1">{leftIcon}</span>}
       {label}

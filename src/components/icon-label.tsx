@@ -6,16 +6,16 @@ interface iconLabelProps {
   leftIcon?: React.ReactNode;
   rightIcon?: React.ReactNode;
   label: string;
-  fontSize: TextSize;
-  color: TextColor;
+  fontSize?: TextSize;
+  color?: TextColor;
 }
 
 export function IconLabel({
   leftIcon,
   rightIcon,
   label,
-  fontSize,
-  color,
+  fontSize = 'text-base',
+  color = 'text-secondary',
   ...props
 }: iconLabelProps) {
   return (
